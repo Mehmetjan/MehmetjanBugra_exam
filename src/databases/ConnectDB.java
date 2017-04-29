@@ -247,8 +247,8 @@ public class ConnectDB {
 
     public static void main(String[] args)throws IOException, SQLException, ClassNotFoundException {
 
-    	/*
-        insertProfileToMySql("profile","name", "id");
+    	
+    	/* insertProfileToMySql("javaexam","Mehmetjan", "2106VA");
         List<User> list = readFromMySql();
         for(User user:list){
             System.out.println(user.getName()+ " " + user.getId());
@@ -256,7 +256,7 @@ public class ConnectDB {
         String message = insertToMongoDB(new User("Ishrat Mina", 3539));
         List<User> user = readFromMongoDB();
         */
-
+   
     }
 
 }

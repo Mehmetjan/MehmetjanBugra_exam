@@ -1,38 +1,64 @@
 package design;
 
-public class EmployeeInfo{
+public class EmployeeInfo implements Employee{
+	String companyName;
+	int employeeId;
+	String employeeName;
+	int yearOfJoining;
+	int salary;
+	String department;	
 	
- /*This class can be implemented from Employee interface then add additional methods in EmployeeInfo class.
- * Also, Employee interface can be implemented into an abstract class.So create an Abstract class
- * then inherit that abstract class into EmployeeInfo class.Once you done with designing EmployeeInfo class,
- * go to CnnEmployee class to apply all the fields and attributes.
- * 
- * Important: YOU MUST USE the 
- * OOP(abstraction,Encapsulation, Inheritance and Polymorphism) concepts in every level possible.
- * Use all kind of keywords(super,this,static,final........)
- *
- */
-
-	/*
-	 * declare few static and final fields and some non-static fields
-	 */
-	static String companyName;
-	
-	/*
-	 * You must implement the logic for below 2 methods and 
-	 * following 2 methods are prototype as well for other methods need to be design,
-	 * as you will come up with the new ideas.
-	 */
-	
-	/*
-	 * you must have multiple constructor.
-	 * Must implement below constructor.
-	 */
 	public EmployeeInfo(int employeeId){
-		
+		this.employeeId=employeeId;
+		this.employeeName="";
+		this.salary=0;
+		this.yearOfJoining=2017;
 	}
     public EmployeeInfo(String name, int employeeId){
-		
+		this.employeeId=employeeId;
+		this.employeeName=name;
+		this.salary=0;
+		this.yearOfJoining=2017;
+	}
+	
+	public String getCompanyName(){
+		return this.companyName;
+	}
+	public void setCompanyName(String companyName){
+		this.companyName=companyName;
+	}
+	public int employeeId(){
+		return this.employeeId;
+	}
+	public void setEmployeeId(int employeeId){
+		this.employeeId=employeeId;
+	}
+	public String employeeName(){
+		return this.employeeName;
+	}
+	public void setEmployeeName(String name){
+		this.employeeName=name;
+	}
+	public void assignDepartment(){
+		this.department="I.T.";
+	}
+	public String getDepartment(){
+		return this.department;
+	}
+	public int calculateSalary(){
+		return this.salary;
+	}
+	public void setSalary(int salary){
+		this.salary=salary;
+	}
+	public void benefitLayout(){
+		System.out.println("You will get health benefit and lunch.");
+	}
+	public void setYearOfJoining(int yearOfJoining){
+		this.yearOfJoining=yearOfJoining;
+	}
+	public int getYearOfJoining(){
+		return this.yearOfJoining;
 	}
 	
 	/*
@@ -43,8 +69,15 @@ public class EmployeeInfo{
 	 * So you probably need to send 2 arguments.
 	 * 
 	 */
-	public static int calculateEmployeeBonus(){
+	public int calculateEmployeeBonus(int salary, String performance){
 		int total=0;
+		if(performance.equals("best")){
+			total = (int).1*salary;
+		}else if(performance.equals("average")){
+			total = (int).08*salary;
+		}else if(performance.equals("worst")){
+			total = 0;
+		}
 		return total;
 	}
 	
@@ -55,8 +88,14 @@ public class EmployeeInfo{
 	 * So you probably need to send 2 arguments.
 	 * 
 	 */
-	public static int calculateEmployeePension(){
+	public int calculateEmployeePension(int salary, int currentYear){
 		int total=0;
+		int difference = this.yearOfJoining - currentYear;
+		total = (int).05*difference*salary;
 		return total;
+	}
+	
+	public String toString(){		
+		return "Name="+employeeName+" EmployeeID="+employeeId+" Company Name="+companyName+" Year of joining="+yearOfJoining+" Salary="+salary+" Department="+department;
 	}
 }

@@ -2,32 +2,136 @@ Please answer the below core-java Questions:
 
 
 What jdk contains or composed of and define each components?
+Answer: Java Compiler : Its Javac tool that located in /bin folder. Java tool reads class and interface definitions, written in the Java programming language, and compiles them into bytecode class files.
+
+   Java Interpreter : Java interpreter is used to interpret the Java files that have been compiled by java Java compiler.
+
+    Java Disassembler: Its a decompiler for the Java programming language, which provided as GUI tool as wel as in the from of plug-in for the Eclips and IntelliJ;
+    Java Header File Generator: Java Header File Generator (javah command-line tool) generates C header and source files that are needed to implement native methods. 
+
+    Javadoc: It is a documentation tool which defines a standard format for such comments, and which can generate HTML files to view the documentation from a web broswer.
+    Java Debugger: It is a Java debugger, a simple command line debugger for Java classes. It comes preinstalled with JDK.
+
+    Java Applet Viewer: it is a standalone command-line program from Sun to run Java applets. Appletviewer is generally used by developers for testing their applets before deploying them to a website
+
 What is IDE?
-What are the IDEs available in the market to support java?
+ Answer:  (integrated development environment ,IDE) is a software application that provides comprehensive facilities to computer programmers for software development
+
+A Java IDE (Integrated Development Environment) is a software application which enables users to more easily write and debug Java programs.
+
+ What are the IDEs available in the market to support java?
+Answer:  There several kind of IDE (Intergrated Development Environment) tool on the market.The three IDEs most often chosen for server-side Java development are IntelliJ IDEA, Eclipse, and NetBeans.
+There are also other IEDs that available on the market, like Android Studio, Enide Studio, BlueJ, jEdit, jGRASP, JSource, JDeveloper, DrJava.
+
 Explain the entire java life cycle.
+Answer: 
+A Java program is written using either a Text Editor like Textpad or an IDE like Eclipse and is saved as a java file. (Program.java)
+The java file is then compiled using Java compiler and a .class file is obtained from it. (Program.class)
+The class file is now portable and can be used to run this Java program in any platform.
+Class file (Program.class) is interpreted by the JVM installed on a particular platform. JVM is part of the JRE software.
+
+
 what is class?
-What is object?
+Answer: A class is a blueprint or a template for creating different objects which defines its properties and behaviors. Java class objects exhibit the properties and behaviors defined by its class. A class can contain fields and methods to describe the behavior of an object.
+
+
+What is object? 
+Answer:  Object is an entity that has state and behavior;
+
+
+
 What is the entry point of an application?
+Answer:   entry point is where control is transferred from the operating system to a computer program, at which place the processor enters a program or a code fragment and execution begins.
+
+
 Why main is static?
+Answer:  In Java, main is a static method. This means the method is part of its class and not part of objects.
+
+
 What is the difference between an Interface and Abstract class?
+Answer: 
+1. Abstract class can extend only one class or one abstract class at a time. Interface can extend any number of interfaces at a time.
+2.Abstract  class  can extend from a class or from an abstract class. Interface can extend only from an interface.
+3.Abstract  class  can  have  both  abstract and concrete methods.	 interface can  have only abstract methods.
+4.A class can extend only one abstract class.	 A class can implement any number of interfaces.
+5.In abstract class keyword ‘abstract’ is mandatory to declare a method as an abstract.	 In an interface keyword ‘abstract’ is optional to declare a method as an abstract.
+6.Abstract  class can have  protected , public and public abstract methods.	 Interface can have only public abstract methods i.e. by default.
+7.Abstract class can have  static, final  or static final  variable with any access specifier.	 interface  can  have only static final (constant) variable i.e. by default.
+
 Can you make an Object from an Interface and Abstract class ? if not how do you use it ?
+Answer:  we can't create object of abstract class, We also can't create object from Interface. We can create subclass to abstract class, or we can implement the interface.
+
+
 what is Access Specifier?
+Answer: 
+ Java Access Specifiers regulate access to classes, fields and methods in Java.These Specifiers determine whether a field or method in a class, can be used or invoked by another method in another class or sub-class. Access Specifiers can be used to restrict access.
+
+
 What is OOP ? Define each feature of java OOP.
+Answer:  oObject riented programming (OOP) refers to a type of computer programming (software design) in which programmers define not only the data type of a data structure, but also the types of operations (functions) that can be applied to the data structure.
+
+
+
 What is API? Name list of API that you have used so far.
+Answer: API is the set of classes included with the Java Development Environment. These classes are written using the Java language and run on the JVM. 
+I have used  Applet,   Arraylist,  File,  Integer,   Math,   Scanner,   String,  Stringtokenizer,String Buffr, String Reader.
+
+
 Does java support multiple inheritance?
+Answer:  No
+
+
 What is method overloading and when it happens?
+Answer:  Method Overloading is a feature that allows a class to have two or more methods having same name, if their argument lists are different.
+It may happen when  their argument lists are different.
+
 What is method overriding and when it happens?
+overriding means to override the functionality of an existing method. It will happen when argument lists or return type are same.
+
 Explain exceptions in java and how to handle it.
+Answer: Exception is a problem that arises during the execution of a program. When an Exception occurs the normal flow of the program is disrupted and the program/Application terminates abnormally, which is not recommended, therefore, these exceptions are to be handled.
+
 What is static keyword in java? How it has been used in variables and methods ?
+Answer:  The static keyword in java is used for memory management mainly. We can apply java static keyword with variables, methods, blocks and nested class. The static keyword belongs to the class than instance of the class.
+
 What is final and how it has been used variables and methods?
+Answer: Final is a keyword or reserved word in java and can be applied to member variables, methods, class and local variables in Java. Once we make a reference final, it is not allowed to change.
+
 What is final, finally and finalize?
+Answer:   Final is a keyword.It is used to apply restrictions on class, method and variable. Final class can't be inherited, final method can't be overridden and final variable value can't be changed.	
+Finally is a block. It is used to place important code, it will be executed whether exception is handled or not.	
+Finalize is a method. Itis used to perform clean up processing just before object is garbage collected.
+
 What is a constructor ?
+Answer: A constructor in Java is a block of code similar to a method that's called when an instance of an object is created. 
+
 What is "this" keyword in java ?
+Answer: It is a reference variable that refers to the current object.
+
 What is "super" keyword in java?
+Answer:  "super" keyword is used inside a sub-class method definition to call a method defined in the super class.
 What is JVM stand for ?
+Answer: Java Virtual Machine (JVM) is a program that runs pre compiled Java programs, which mean JVM executes class files (byte-code) and produces output.
+
 What version of java are you using?
+Answer :  java version "1.8.0_131". 
 What is JAR stand for ?
+Answer: is a package file format typically used to aggregate many Java class files and associated metadata and resources (text, images, etc.) into one file for distribution.
+
 What is compile time and run time?
+Asnwer: The source code must be compiled into machine code in order to become and executable program. This compilation process is referred to as compile time. 
+
 What is heap?
+Anser: The heap is the runtime data area from which memory for all class instances and arrays is allocated.
+
+
 How java manage it's memory?
+Answer: Memory management is the process of allocating new objects and removing unused objects to make space for those new object allocations. The memory will be managed by  object allocation and garbage collection process.
+
 What is the difference between String, StringBuffer and StringBuilder?
+Answer: String, or  String class is used to manipulate character strings that cannot be changedStringBuffer is synchronized( which means it is thread safe and hence you can use it when you implement threads for your methods) whereas StringBuilder is not synchronized.
+
+
+
+
+

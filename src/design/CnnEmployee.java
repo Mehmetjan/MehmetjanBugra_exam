@@ -15,8 +15,15 @@ public class CnnEmployee {
 	 **/
 	public static void main(String[] args) {
 		
-
+		
+			EmployeeInfo e = new EmployeeInfo("Mehmet", 123456);
+			e.setCompanyName("Mehmet Consultancy");
+			e.assignDepartment();
+			e.setSalary(10000);
+			e.setYearOfJoining(2015);
+			System.out.println(e);
+		}
 
 	}
 
-}
+

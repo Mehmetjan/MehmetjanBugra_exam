@@ -36,7 +36,42 @@ public class Numbers {
 		System.out.println("Total Execution Time of " + num.length + " numbers in Insertion Sort take: " + insertionSortExecutionTime + " milli sec");
 
 		//Continue for rest of the Sorting Algorithm....
+		//Bubble Sort
+				algo.bubbleSort(num);
+				long bubbleSortExecutionTime = algo.executionTime;
+				System.out.println("Total Execution Time of " + num.length + " numbers in Bubble Sort take: " + bubbleSortExecutionTime + " milli sec");
+				
+				//Merge Sort
+				algo.mergeSort(num);
+				long mergeSortExecutionTime = algo.executionTime;
+				System.out.println("Total Execution Time of " + num.length + " numbers in Merge Sort take: " + mergeSortExecutionTime + " milli sec");
+				
+				//Quick Sort
+				algo.quickSort(num);
+				long quickSortExecutionTime = algo.executionTime;
+				System.out.println("Total Execution Time of " + num.length + " numbers in Quick Sort take: " + quickSortExecutionTime + " milli sec");
+				
+				//Heap Sort
+				algo.heapSort(num);
+				long heapSortExecutionTime = algo.executionTime;
+				System.out.println("Total Execution Time of " + num.length + " numbers in Heap Sort take: " + heapSortExecutionTime + " milli sec");
+				
+				//Bucket Sort
+				algo.bucketSort(num);
+				long bucketSortExecutionTime = algo.executionTime;
+				System.out.println("Total Execution Time of " + num.length + " numbers in Bucket Sort take: " + bucketSortExecutionTime + " milli sec");
+				
+				//Shell Sort
+				algo.shellSort(num);
+				long shellSortExecutionTime = algo.executionTime;
+				System.out.println("Total Execution Time of " + num.length + " numbers in Shell Sort take: " + shellSortExecutionTime + " milli sec");
+			}
+	
+	
+	
+	
+	
+		}
 
-	}
 
-}
+

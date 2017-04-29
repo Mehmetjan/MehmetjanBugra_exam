@@ -1,28 +1,91 @@
 Please answer the below Data Structure Questions:
 
 why do we need data structure?
+Answer: Data structure is important to arrange and process the data in the memory for efficient storage, access and processing.
+
 List out the areas in which data structures are applied extensively?
+Compiler Design,
+Operating System,
+Database Management System,
+Statistical analysis package,
+Numerical Analysis,
+Graphics,
+Artificial Intelligence,
+Simulation
+
 what is an Array?
+Answer: 
+An array is a container object that holds a fixed number of values of a single type. The length of an array is established when the array is created. After creation, its length is fixed.
+
 what is the difference between the Array and ArrayList?
+Answer: Array is not Resizable. ArrayList Array not Resizable. 
+Array is primitives. Array is not primitives.
+There are iterating values for each array.  For each Arraylist use Iterator.
+Performance of array is fast. Performance of arrayList is slow.
+Array is multidimensional. ArrayList is not. 
+
+
 what is LinkedList?
+Answer: A linked list is a linear data structure where each element is a separate object. 
+
 what is queue?
+Answer: Queue is a part of java collection that follows  First In First Out structure for holding elements.
 what is stack?
+Answer: A stack is a data structure that allows data to be inserted (a 'push' operation), and removed (a 'pop' operation).
+
 what is FIFO and LIFO?
+Answer : FIFO  is an approach to handling program work requests from queues or stacks so that the oldest request is handled next. 
+         LIFO: is an approach in which the most recent request is handled next and the oldest request doesn't get handled until it is the only remaining request on the queue (or in the stack).
 what is the order of complexity?
+Answer： order of complexity is the feature that related to the performance, refer to the complexity of an algorithm, can be used to describe the execution time required or the space used.
+
 what is the best case to search an element from an array?
+Answer： The simplest way to search for an element is to iterate through the entire array and compare each value of that array with the target element. 
+           If the target is in the beginning of the array, then this search would require only a single comparison which is known as the best case
 what is the worst case to search an element from an array?
+Answer : if the target is located at the end of the array, the number of comparisons required would be equal to the length of the array. That will be the worst case.
+
 what is tree in data structure?
+Answer: A tree is a fancy Swing component that displays hierarchical data in outline form in Java, which  referred to as a tree.
+
 what is graph in data structure?
+Answer: A graph is a pictorial representation of a set of objects where some pairs of objects are connected by links.
+
 what is the difference between the HashTable and HashMap?
 What are the major data structures used in the following areas : RDBMS, Network data model and Hierarchical data model.
+
 How HashMap works in java?
+Answer: It works based on the hashing principle. Hashing is the mechanism of assigning unique code to a variable or attribute using an algorithm to enable easy retrieval.
+
 What is ArrayIndexOutOfBoundsException in java? When it occurs?
+Answer: It is indicate that an array has been accessed with an illegal index. The index is either negative or greater than or equal to the size of the array. 
+       It will occur when someone try to access an array index that doesn't exist,or try to access outside the bounds of the array.
+
 What are the different ways of copying an array into another array?
+Answer: in Java there are two possibilities to copy values from an array to another:
+
+           1.an own implementation of an copying algorithm;
+           2.use of API functions.
+
+
 What is difference between an array and a linked list?
+Answer : Linked list provides following two advantages over arrays:
+       1)	Dynamic size
+       2)	Ease of insertion/deletion
+
 What is DFS and BFS?
+Anser: Breadth First Search (BFS) and Depth First Search (DFS) are the two popular algorithms.
+           The aim of DFS algorithm is to traverse the graph in such a way that it tries to go far from the root node. Stack is used in the implementation of the depth first search.
+            The aim of BFS algorithm is to traverse the graph as close as possible to the root node. Queue is used in the implementation of the breadth first search.
+
 What is Recursion?
+Answer:  Recursion in java is a process in which a method calls itself continuously.
+
 What is Big-(O)-notation?
+Answer:  A theoretical measure of the execution of an algorithm, usually the time or memory needed, given the problem size n, which is usually the number of items.
+
 Outlined different kind of sorting algorithm with time complexity?
+Answer:  bubble sort ,  selection sort,  insertion sort,  quick sort,  merge sort 
 
 Draw a table with time complexity in which it will summarize all the data structure feature's advantages and disadvantages.
   a)In terms of Accessing element.
